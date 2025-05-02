@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lifecycle Cost Management</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>Lifecycle Cost Management</h1>
+
+    <!-- Equipment Section -->
+    <section>
+        <h2>Equipment</h2>
+        <form id="add-equipment-form">
+            <input type="text" id="area" placeholder="Area" required>
+            <input type="text" id="flota" placeholder="Flota" required>
+            <input type="text" id="codigo" placeholder="Codigo" required>
+            <input type="text" id="modelo" placeholder="Modelo" required>
+            <input type="number" id="horometro_actual" placeholder="Horometro Actual" required>
+            <input type="number" id="vida_util" placeholder="Vida Útil" required>
+            <input type="text" id="overhaul" placeholder="Overhaul" required>
+            <button type="submit">Add Equipment</button>
+        </form>
+        <table id="equipment-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Area</th>
+                    <th>Flota</th>
+                    <th>Name</th>
+                    <th>Modelo</th>
+                    <th>Horometro Actual</th>
+                    <th>Vida Útil</th>
+                    <th>Overhaul</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+
+    <!-- Components Section -->
+    <section>
+        <h2>Components</h2>
+        <form id="add-component-form">
+            <input type="text" id="equipment_codigo" placeholder="Equipment Código" required>
+            <input type="text" id="component_tipo" placeholder="Tipo" required>
+            <input type="text" id="component_name" placeholder="Name" required>
+            <input type="text" id="component_P_N" placeholder="P/N" required>
+            <input type="text" id="component_reparable" placeholder="Reparable" required>
+            <input type="number" id="component_num_rep" placeholder="Num Rep" required>
+            <input type="number" id="component_PCR" placeholder="PCR" required>
+            <input type="date" id="component_fecha_instalacion" placeholder="Fecha Instalación" required>
+            <input type="number" id="component_horometro_instalacion" placeholder="Horometro Instalación" required>
+            <button type="submit">Add Component</button>
+        </form>
+        <table id="components-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Equipment Código</th>
+                    <th>Tipo</th>
+                    <th>Name</th>
+                    <th>P/N</th>
+                    <th>Reparable</th>
+                    <th>Num Rep</th>
+                    <th>PCR</th>
+                    <th>Fecha Instalación</th>
+                    <th>Horometro Instalación</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+
+    <script src="static/js1/app.js"></script>
+</body>
+</html>
