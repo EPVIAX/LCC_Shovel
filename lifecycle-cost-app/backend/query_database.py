@@ -4,7 +4,7 @@ from models.database import session, Equipo, Componente
 def fetch_all_equipment():
     equipment = session.query(Equipo).all()
     for e in equipment:
-        print(f"ID: {e.id}, Area: {e.area}, Flota: {e.flota}, Codigo: {e.codigo}, "
+        print(f"ID: {e.id}, Area: {e.area}, Flota: {e.flota}, Codigo: {e.codigo}, Modelo: {e.modelo}, "
               f"Horometro Actual: {e.horometro_actual}, Vida Útil: {e.vida_util}, Overhaul: {e.overhaul}")
 
 # Fetch all records from the 'components' table

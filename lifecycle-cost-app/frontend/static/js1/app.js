@@ -12,6 +12,7 @@ async function fetchEquipment() {
             <td>${e.area}</td>
             <td>${e.flota}</td>
             <td>${e.codigo}</td>
+            <td>${e.modelo}</td>
             <td>${e.horometro_actual}</td>
             <td>${e.vida_util}</td>
             <td>${e.overhaul}</td>
@@ -50,6 +51,7 @@ document.querySelector('#add-equipment-form').addEventListener('submit', async (
         area: document.querySelector('#area').value,
         flota: document.querySelector('#flota').value,
         codigo: document.querySelector('#codigo').value,
+        modelo: document.querySelector('#modelo').value,
         horometro_actual: parseFloat(document.querySelector('#horometro_actual').value),
         vida_util: parseInt(document.querySelector('#vida_util').value),
         overhaul: document.querySelector('#overhaul').value

@@ -21,6 +21,7 @@ def get_all_equipment():
         'area': e.area,
         'flota': e.flota,
         'codigo': e.codigo,
+        'modelo': e.modelo,
         'horometro_actual': e.horometro_actual,
         'vida_util': e.vida_util,
         'overhaul': e.overhaul
@@ -33,6 +34,7 @@ def add_equipment():
         area=data['area'],
         flota=data['flota'],
         codigo=data['codigo'],
+        modelo=data['modelo'],
         horometro_actual=data['horometro_actual'],
         vida_util=data['vida_util'],
         overhaul=data['overhaul']
@@ -50,6 +52,7 @@ def update_equipment(id):
     equipment.area = data['area']
     equipment.flota = data['flota']
     equipment.codigo = data['codigo']
+    equipment.modelo = data['modelo']
     equipment.horometro_actual = data['horometro_actual']
     equipment.vida_util = data['vida_util']
     equipment.overhaul = data['overhaul']
